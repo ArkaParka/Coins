@@ -1,0 +1,80 @@
+.header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 2100;
+	display: flex;
+	align-items: center;
+	padding: 20px 96px;
+
+	&__logo {
+		display: block;
+		width: 64px;
+		height: 40px;
+		transition: $duration-normal;
+	}
+
+	&__basket {
+		color: $color-white;
+		background-color: $color-white;
+		box-shadow: 0px 0px 45px 0px rgba($color-dark-gray, .20);
+		padding: 12px;
+		margin-left: auto;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+
+		&_not-empty:after {
+			content: '';
+			position: absolute;
+			right: 95px;
+			bottom: 55px;
+			width: 12px;
+			height: 12px;
+			background-size: 12px 12px;
+			background-image: url('../images/sprites/svg/notification.svg');
+
+			//background-image: url("../images/#{sprite-image('notification.svg', $size: normal)}");
+		}
+	}
+}
+
+@media (max-width: ($desktop * 1px)) {
+	.header {
+		padding: 20px 48px;
+
+		&__basket {
+			&_not-empty:after {
+				right: 47px;
+				bottom: 55px;
+			}
+		}
+	}
+}
+
+@media (max-width: ($tablet * 1px)) {
+	.header {
+		padding: 20px 36px;
+
+		&__basket {
+			&_not-empty:after {
+				right: 35px;
+				bottom: 55px;
+			}
+		}
+	}
+}
+
+@media (max-width: ($mobile * 1px)) {
+	.header {
+		padding: 8px 20px;
+
+		&__basket {
+			&_not-empty:after {
+				right: 22px;
+				bottom: 45px;
+			}
+		}
+	}
+}
