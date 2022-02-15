@@ -1,8 +1,7 @@
 // stylelint-disable no-empty-source
 // @include font-face("../fonts/FontName/FontName", "FontName", 400, normal);
-
 @font-face {
-	src: url("../resources/fonts/Suisse-Intl/Suisse-Intl.woff2") format("woff2"), url("../fonts/Suisse-Intl/Suisse-Intl.woff") format("woff");
+	src: url("../fonts/Suisse-Intl/Suisse-Intl.woff2") format("woff2"), url("../fonts/Suisse-Intl/Suisse-Intl.woff") format("woff");
 	font-family: "Suisse Intl";
 	font-weight: 400;
 	font-style: normal;
@@ -10,7 +9,7 @@
 }
 
 @font-face {
-	src: local("Geometria"), url("../resources/fonts/Geometria/Geometria.woff") format("woff");
+	src: local("Geometria"), url("../fonts/Geometria/Geometria.woff") format("woff");
 	font-family: "Geometria";
 	font-weight: 400;
 	font-style: normal;
@@ -18,7 +17,7 @@
 }
 
 @font-face {
-	src: local("Geometria-Medium"), local("Geometria-Medium"), url("../resources/fonts/Geometria/Geometria-Medium.woff") format("woff");
+	src: local("Geometria-Medium"), local("Geometria-Medium"), url("../fonts/Geometria/Geometria-Medium.woff") format("woff");
 	font-family: "Geometria";
 	font-weight: 500;
 	font-style: normal;
@@ -26,7 +25,7 @@
 }
 
 @font-face {
-	src: local("Geometria Bold"), local("Geometria-Bold"), url("../resources/fonts/Geometria/Geometria-Bold.woff") format("woff");
+	src: local("Geometria Bold"), local("Geometria-Bold"), url("../fonts/Geometria/Geometria-Bold.woff") format("woff");
 	font-family: "Geometria";
 	font-weight: 700;
 	font-style: normal;
