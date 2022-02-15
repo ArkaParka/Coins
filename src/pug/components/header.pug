@@ -1,6 +1,8 @@
 header.header
-	a.header__logo(href=data.header.links.logo)
-		+svg("logo")
+	.container
+		.header-content
+			a.header__logo(href=data.header.links.logo)
+				+svg("logo")
 
-	button.header__basket.btn(type="button")
-		+svg("basket-icon")
+			button.header__basket.header__basket_not-empty.btn(type="button")
+				+svg("basket-icon")

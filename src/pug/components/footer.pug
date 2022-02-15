@@ -1,63 +1,72 @@
 footer.footer
-	.footer__contacts
-		.contacts-group
-			.logo
-				+svg("logo")
+	.container
+		.footer__contacts
+			.contacts-group
+				.logo
+					+svg("logo")
 
-			.address
-				p 295000, г. Симферополь,
-				p ул. Набережная им. 60-летия СССР, д. 34
+				.address
+					p 295000, г. Симферополь,
+					p ул. Набережная им. 60-летия СССР, д. 34
 
-		.phone-numbers
-			.phone-number.phone-number_large
-				p 8 800 234-27-27
+			.phone-numbers
+				.phone-number.phone-number_large
+					p 8 800 234-27-27
 
-			.phone-number
-				p +7 365 255-05-00
+				.phone-number
+					p +7 365 255-05-00
 
-			.phone-number
-				p +7 495 232-90-00
+				.phone-number
+					p +7 495 232-90-00
 
-	.footer__qr-code
-		.qr-code
-			+svg('qr')
+		.footer__download-app
+			.download-app-group
+				.qr-code
+					+svg('qr')
 
-		.description
-			p Наведите камеру телефона на QR-код,
-			p чтобы скачать мобильное приложение
+				.description
+					p Наведите камеру телефона на QR-код,
+					p
+						| чтобы скачать&nbsp;
+						a(href="#") мобильное приложение
 
-		.social-icons
-			.social-icon
-				a(href='#')
-					+svg("instagram")
+			button.download-app-btn.btn(type="button")
+				.btn-text
+					| Скачать приложение
 
-			.social-icon
-				a(href='#')
-					+svg("vk")
+			.social-icons-wrapper
+				.social-icons
+					.social-icon
+						a(href='#')
+							+svg("instagram")
 
-			.social-icon
-				a(href='#')
-					+svg("facebook")
+					.social-icon
+						a(href='#')
+							+svg("vk")
 
-			.social-icon
-				a(href='#')
-					+svg("youtube")
+					.social-icon
+						a(href='#')
+							+svg("facebook")
 
-			.social-icon
-				a(href='#')
-					+svg("twitter")
+					.social-icon
+						a(href='#')
+							+svg("youtube")
 
-			.social-icon
-				a(href='#')
-					+svg("odnokl")
+					.social-icon
+						a(href='#')
+							+svg("twitter")
 
-	.footer__info
-		.copyright
-			p © 1991–2020 РНКБ (ПАО)
-			p Генеральная лицензия Банка России № 1354
+					.social-icon
+						a(href='#')
+							+svg("odnokl")
 
-		.info-text
-			p Информация о максимальных процентных
-			p ставках по вкладам физических лиц
+		.footer__info
+			.copyright
+				p © 1991–2020 РНКБ (ПАО)
+				p Генеральная лицензия Банка России № 1354
+
+			.info-text
+				p Информация о максимальных процентных
+				p ставках по вкладам физических лиц
 
 

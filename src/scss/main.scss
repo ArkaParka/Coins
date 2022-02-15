@@ -13,3 +13,43 @@
 @import "components/footer";
 
 @import "pages/home";
+
+.container-fluid {
+	margin: 0 auto;
+	max-width: 1920px;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1504px;
+}
+
+.flex-row {
+	display: flex;
+
+	&_justify_between {
+		justify-content: space-between;
+	}
+
+	&_align_center {
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: ($desktop * 1px)) {
+	.container {
+		padding: 0 48px;
+	}
+}
+
+@media screen and (max-width: ($tablet * 1px)) {
+	.container {
+		padding: 0 36px;
+	}
+}
+
+@media screen and (max-width: ($mobile-xl * 1px)) {
+	.container {
+		padding: 0 20px;
+	}
+}
