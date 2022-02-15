@@ -90,7 +90,7 @@
 			width: 245px;
 			height: 60px;
 			align-self: center;
-			background: $color-footer-main-btn;
+			background: $color-main-btn;
 			box-shadow: inset 0px -4px 16px $color-light-blue;
 			border-radius: 24px;
 
@@ -98,6 +98,14 @@
 				font-family: Suisse Intl;
 				font-size: 14px;
 				color: $color-white;
+			}
+
+			&:hover {
+				background: $color-main-btn-hover;
+			}
+
+			&:active {
+				background: $color-main-btn-press;
 			}
 		}
 
