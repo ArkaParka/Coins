@@ -36,9 +36,9 @@
 			width: 12px;
 			height: 12px;
 			background-size: 12px 12px;
-			background-image: url('../images/sprites/svg/notification.svg');
+			background-image: url('../../images/sprites/svg/notification.svg');
 
-			//background-image: url("../images/#{sprite-image('notification.svg', $size: normal)}");
+			//background-image: url("../../images/#{sprite-image('notification.svg')}");
 		}
 	}
 }
