@@ -3,15 +3,17 @@
 // COLORS
 $color-black: #000;
 $color-white: #fff;
-$color-gray: #eee;
+$color-gray: #F6F6F6;
 $color-dark-gray: #323232;
 $color-footer-background: linear-gradient(0deg, #F2F2F2 0%, rgba(242, 242, 242, 0) 100%);
-$color-footer-text-light: #828282;
-$color-footer-text-dark: #333E48;
+$color-text-light: #828282;
+$color-text-dark: #333E48;
 $color-main-btn: linear-gradient(360deg, #00AEC7 0%, #00AEC7 6.67%, #01AFC8 13.33%, #02B1CA 20%, #04B3CD 26.67%, #06B7D0 33.33%, #09BAD4 40%, #0CBED8 46.67%, #0FC3DC 53.33%, #12C7E0 60%, #15CBE4 66.67%, #18CEE7 73.33%, #19D0EA 80%, #1BD2EC 86.67%, #1BD3ED 93.33%, #1CD3ED 100%);
 $color-main-btn-hover: linear-gradient(360deg, #01B7D1 0%, #01B7D2 6.67%, #02B8D3 13.33%, #03BAD4 20%, #05BCD6 26.67%, #08BFD9 33.33%, #0BC2DD 40%, #0EC6E0 46.67%, #12CAE4 53.33%, #15CEE8 60%, #18D1EB 66.67%, #1BD4EE 73.33%, #1DD6F1 80%, #1ED8F2 86.67%, #1FD9F3 93.33%, #1FD9F3 100%);
 $color-main-btn-press: #00AEC7;
+$color-blue: #02ABCA;
 $color-light-blue: #1CD3ED;
+$color-product-card-press: #E6F7FA;
 
 // FONTS
 // stylelint-disable-next-line
@@ -27,9 +29,12 @@ $easing-in: ease-in;
 // Settings
 $desktop: 1024;
 $desktop-xl: 1600;
-$laptop: 1440;
+$laptop: 1510;
 $tablet-xl: 850;
+$tablet-l: 820;
 $tablet: 768;
+$tablet-s: 685;
 $mobile-xl: 660;
+$mobile-l: 500;
 $mobile: 375;
 $desktop-vh: 750;

@@ -26,7 +26,7 @@
 				margin-top: 24px;
 				font-family: Suisse Intl;
 				line-height: 20px;
-				color: $color-footer-text-light;
+				color: $color-text-light;
 			}
 		}
 
@@ -38,7 +38,7 @@
 				font-family: Suisse Intl;
 				font-size: 16px;
 				line-height: 20px;
-				color: $color-footer-text-light;
+				color: $color-text-light;
 				height: 20px;
 
 				&_large {
@@ -49,7 +49,7 @@
 					font-size: 44px;
 					line-height: 48px;
 					letter-spacing: -0.03em;
-					color: $color-footer-text-light;
+					color: $color-text-light;
 				}
 			}
 		}
@@ -68,7 +68,7 @@
 				width: 72px;
 				height: 72px;
 				margin-right: 40px;
-				background-color: $color-footer-text-dark;
+				background-color: $color-text-dark;
 			}
 
 			.description {
@@ -76,7 +76,7 @@
 				font-family: Suisse Intl;
 				font-size: 16px;
 				line-height: 20px;
-				color: $color-footer-text-dark;
+				color: $color-text-dark;
 
 				a {
 					color: $color-light-blue;
@@ -145,7 +145,7 @@
 		.copyright {
 			font-family: Suisse Intl;
 			line-height: 20px;
-			color: $color-footer-text-light;
+			color: $color-text-light;
 		}
 
 		.info-text {
@@ -153,7 +153,7 @@
 			width: 470px;
 			font-family: Suisse Intl;
 			line-height: 20px;
-			color: $color-footer-text-dark;
+			color: $color-text-dark;
 		}
 	}
 }
@@ -180,22 +180,6 @@
 
 			.info-text {
 				width: 350px;
-			}
-		}
-	}
-}
-
-@media screen and (max-width: ($tablet-xl * 1px)) {
-	.footer {
-		&__contacts {
-			.phone-numbers {
-				width: 300px;
-			}
-		}
-
-		&__info {
-			.info-text {
-				width: 300px;
 			}
 		}
 	}
@@ -250,7 +234,7 @@
 	}
 }
 
-@media screen and (max-width: ($mobile-xl * 1px)) {
+@media (max-width: ($mobile-xl * 1px)) {
 	.footer {
 		&__contacts {
 			font-size: 14px;
@@ -270,7 +254,7 @@
 					letter-spacing: -0.04em;
 					font-weight: 500;
 					height: 32px;
-					color: $color-footer-text-light;
+					color: $color-text-light;
 				}
 			}
 		}

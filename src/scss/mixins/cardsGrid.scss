@@ -1,0 +1,105 @@
+.grid-container {
+	margin: 0 auto;
+	overflow: hidden;
+
+	.popular-title {
+		font-family: Geometria;
+		font-weight: bold;
+		font-size: 44px;
+		line-height: 48px;
+		letter-spacing: -0.03em;
+		color: $color-text-dark;
+	}
+
+	.cards-grid {
+		position: relative;
+		width: fit-content;
+		margin: 40px auto;
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 32px;
+
+		&.popular-products {
+			max-width: 1410px;
+			overflow: hidden;
+
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-auto-flow: column;
+		}
+	}
+}
+
+@media (max-width: ($laptop * 1px)) {
+	.grid-container {
+		.cards-grid {
+			&.popular-products {
+				max-width: 930px;
+			}
+		}
+	}
+}
+
+@media (max-width: ($desktop * 1px)) {
+	.grid-container {
+		.cards-grid {
+			&.popular-products {
+				max-width: 610px;
+			}
+		}
+	}
+}
+
+@media (max-width: ($tablet-xl * 1px)) {
+	.grid-container {
+		.cards-grid {
+			&.popular-products {
+				max-width: 700px;
+			}
+		}
+	}
+}
+
+@media (max-width: ($tablet-l * 1px)) {
+	.grid-container {
+		.cards-grid {
+			&.popular-products {
+				max-width: 610px;
+			}
+		}
+	}
+}
+
+@media (max-width: ($tablet * 1px)) {
+	.grid-container {
+		.popular-title {
+			font-size: 32px;
+			line-height: 32px;
+		}
+	}
+}
+
+@media (max-width: ($tablet-s * 1px)) {
+	.grid-container {
+		.cards-grid {
+			grid-template-columns: 1fr;
+
+			&.popular-products {
+				max-width: 448px;
+			}
+		}
+	}
+}
+
+@media (max-width: ($mobile-l * 1px)) {
+	.grid-container {
+		.cards-grid {
+			&.popular-products {
+				max-width: 335px;
+			}
+		}
+	}
+}
+
+
+

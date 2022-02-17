@@ -1,0 +1,26 @@
+mixin productCard(data)
+	a.product-card
+		.product-card-container.new
+			.product-card__image
+				+lazyPicture({
+					src: `${baseDir}images/sprites/png/coin-gold.png`,
+					alt: 'Coin',
+				}).image
+
+			.product-card__title
+				p=data.title
+
+			.product-card__description
+				p Серебро, 925 проба
+
+			.product-card__price
+				.price
+					if data.oldPrice
+						.price_old
+							p=data.oldPrice
+					.price_current
+						p=data.price
+
+				button.basket-btn.btn
+					.tooltip
+						p=data.btnTitle

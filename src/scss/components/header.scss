@@ -1,5 +1,5 @@
 .header {
-	position: fixed;
+	position: relative;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -37,8 +37,6 @@
 			height: 12px;
 			background-size: 12px 12px;
 			background-image: url("../../images/sprites/svg/notification.svg");
-
-			//background-image: url("../../images/#{sprite-image('notification.svg')}");
 		}
 	}
 }
@@ -46,32 +44,6 @@
 @media (max-width: ($desktop * 1px)) {
 	.header {
 		padding: 20px 0;
-
-		&__basket_not-empty{
-			&:after {
-				right: 50px;
-			}
-		}
-	}
-}
-
-@media (max-width: ($tablet * 1px)) {
-	.header {
-		&__basket_not-empty{
-			&:after {
-				right: 40px;
-			}
-		}
-	}
-}
-
-@media (max-width: ($mobile-xl * 1px)) {
-	.header {
-		&__basket_not-empty{
-			&:after {
-				right: 22px;
-			}
-		}
 	}
 }
 

@@ -1,0 +1,9 @@
+mixin cardsGrid(cardsArr, isPopularProducts=false)
+	.grid-container
+		if (isPopularProducts)
+			.popular-title
+				p Популярные товары
+		.cards-grid(class=(isPopularProducts ? 'popular-products' : ''))
+			each card in cardsArr
+				+productCard(card)
+

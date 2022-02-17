@@ -10,6 +10,7 @@
 @import "helpers";
 
 @import "components/header";
+@import "components/product-card";
 @import "components/footer";
 
 @import "pages/home";
@@ -36,15 +37,44 @@
 	}
 }
 
+.content {
+	padding: 48px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 32px;
+}
+
+.toolbar {
+	height: 100vh;
+	max-width: 448px;
+	min-width: 288px;
+	background: #E6F7F9;
+	border-radius: 12px;
+}
+
 @media screen and (max-width: ($desktop * 1px)) {
 	.container {
 		padding: 0 48px;
+	}
+
+	.content {
+		padding: 0;
+	}
+
+	.toolbar {
+		max-width: 288px;
+		min-width: 200px;
 	}
 }
 
 @media screen and (max-width: ($tablet * 1px)) {
 	.container {
 		padding: 0 36px;
+	}
+
+	.toolbar {
+		display: none;
 	}
 }
 

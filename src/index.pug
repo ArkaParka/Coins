@@ -4,11 +4,23 @@ prepend vars
 	//-
 
 append vars
-	//-
+	- let title_short = "Крым современный"
+	- let title_long = "Монета-брелок — Пожелание благополучия"
+	- let title_very_long = "Монета-брелок — Пожелание благополучия Монета-брелок — Пожелание благополучия"
+	- let oldPrice = "12 999 P"
+	- let btnTitle = "Добавлено в корзину"
+	- let cardData = {title: title_long, oldPrice: oldPrice, price: '29 000 ₽', btnTitle: btnTitle}
+	- let cards = [cardData, cardData, cardData, cardData]
+	- let isPopularProducts = true
 
 block content
 	include pug/data
 
 	.site
 		include pug/components/header
+		.container
+			.content
+				//.toolbar
+				+cardsGrid(cards)
+				+cardsGrid(cards, isPopularProducts)
 		include pug/components/footer

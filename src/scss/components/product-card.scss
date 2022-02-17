@@ -1,0 +1,388 @@
+.product-card {
+	position: relative;
+	height: 556px;
+	max-width: 448px;
+	cursor: pointer;
+	border-radius: 32px;
+	background: $color-gray;
+
+	&-container {
+		width: 100%;
+		height: 100%;
+
+		display: flex;
+		flex-direction: column;
+
+		padding: 40px;
+
+		&.new:before {
+			content: 'new';
+
+			position: absolute;
+			right: 32px;
+			top: 32px;
+
+			z-index: 1;
+			background-image: url("../../images/sprites/svg/new.svg");
+			width: 56px;
+			height: 56px;
+			padding: 16px 13px;
+
+			font-family: Suisse Intl;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			color: $color-white;
+		}
+	}
+
+	&__image {
+		align-items: center;
+		display: flex;
+		height: 240px;
+		width: 368px;
+		border-radius: 3px;
+		margin-bottom: 40px;
+
+		img,
+		.image {
+			width: 100%;
+		}
+	}
+
+	&__title {
+		font-family: Geometria;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 32px;
+		color: $color-text-dark;
+		padding-bottom: 12px;
+
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2; /* number of lines to show */
+		-webkit-box-orient: vertical;
+	}
+
+	&__description {
+		font-family: Suisse Intl;
+		font-size: 16px;
+		line-height: 24px;
+		color: $color-text-light;
+	}
+
+	&__price {
+		display: flex;
+		align-items: center;
+		margin-top: auto;
+
+		.price {
+			display: flex;
+			flex-direction: column;
+
+			&_current {
+				font-family: Geometria;
+				font-weight: 500;
+				font-size: 44px;
+				line-height: 48px;
+				letter-spacing: -0.03em;
+				color: $color-blue;
+			}
+
+			&_old {
+				width: fit-content;
+				height: 36px;
+				align-items: center;
+				padding: 8px 12px;
+				margin: 32px 0 12px 0;
+				background: $color-white;
+				border-radius: 12px;
+
+				font-family: Suisse Intl;
+				font-size: 18px;
+				line-height: 20px;
+				text-decoration-line: line-through;
+				color: $color-text-dark;
+			}
+		}
+
+		.basket-btn {
+			background-image: url("../../images/sprites/svg/basket-btn-default.svg");
+
+			padding: 16px;
+			margin-left: auto;
+			margin-top: auto;
+			width: 56px;
+			height: 56px;
+			border-radius: 12px;
+
+			&:hover {
+				background-image: url("../../images/sprites/svg/basket-btn-hover.svg");
+			}
+
+			&:active {
+				background-image: url("../../images/sprites/svg/basket-btn-press.svg");
+			}
+		}
+	}
+
+	&:hover {
+		background: $color-white;
+		box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.05);
+
+		.product-card__price {
+			.price {
+				&_old {
+					background: $color-gray;
+				}
+			}
+
+			.basket-btn {
+				background-image: url("../../images/sprites/svg/basket-btn-hover.svg");
+			}
+		}
+	}
+
+	&:active {
+		background-color: $color-product-card-press;
+
+		.product-card__price {
+			.price {
+				&_old {
+					background: $color-gray;
+				}
+			}
+
+			.basket-btn {
+				background-image: url("../../images/sprites/svg/basket-btn-press.svg");
+			}
+		}
+	}
+}
+
+@media (max-width: ($desktop * 1px)) {
+	.product-card {
+		height: 458px;
+		max-width: 288px;
+
+		&-container {
+			padding: 32px;
+
+			&.new:before {
+				right: 24px;
+				top: 24px;
+			}
+		}
+
+		&__image {
+			height: 146px;
+			width: 224px;
+			margin-bottom: 32px;
+		}
+
+		&__title {
+			-webkit-line-clamp: 3;
+		}
+
+		&__price {
+			.price {
+				&_current {
+					font-size: 24px;
+					line-height: 32px;
+				}
+
+				&_old {
+					font-size: 16px;
+					line-height: 20px;
+					margin-top: 24px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: ($tablet-xl * 1px)) {
+	.product-card {
+		height: 474px;
+		max-width: 332px;
+
+		&__image {
+			height: 174px;
+			width: 268px;
+			margin-bottom: 24px;
+		}
+
+		&__title {
+			padding-bottom: 8px;
+		}
+
+		&__price {
+			.price {
+				&_old {
+					margin-bottom: 8px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: ($tablet-l * 1px)) {
+	.product-card {
+		height: 458px;
+		max-width: 288px;
+
+		&-container {
+			padding: 32px;
+
+			&.new:before {
+				right: 24px;
+				top: 24px;
+			}
+		}
+
+		&__image {
+			height: 146px;
+			width: 224px;
+			margin-bottom: 32px;
+		}
+
+		&__title {
+			-webkit-line-clamp: 3;
+		}
+
+		&__price {
+			.price {
+				&_current {
+					font-size: 24px;
+					line-height: 32px;
+				}
+
+				&_old {
+					font-size: 16px;
+					line-height: 20px;
+					margin-top: 24px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: ($tablet-s * 1px)) {
+	.product-card {
+		height: 556px;
+		max-width: 448px;
+
+		&-container {
+			padding: 40px;
+
+			&.new:before {
+				right: 32px;
+				top: 32px;
+			}
+		}
+
+		&__image {
+			height: 240px;
+			width: 368px;
+			margin-bottom: 40px;
+		}
+
+		&__title {
+			-webkit-line-clamp: 2;
+		}
+
+		&__price {
+			.price {
+				&_current {
+					font-size: 44px;
+					line-height: 48px;
+				}
+
+				&_old {
+					font-size: 18px;
+					line-height: 20px;
+					margin-top: 32px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: ($mobile-l * 1px)) {
+	.product-card {
+		height: 420px;
+		max-width: 335px;
+
+		&__image {
+			height: 176px;
+			width: 271px;
+		}
+
+		&__title {
+			-webkit-line-clamp: 2;
+			padding-bottom: 12px;
+			font-size: 20px;
+			line-height: 23px;
+		}
+
+		&__description {
+			font-size: 14px;
+			line-height: 20px;
+		}
+
+		&__price {
+			.price {
+				&_current {
+					font-size: 20px;
+					line-height: 20px;
+				}
+
+				&_old {
+					margin: 12px 0 18px 0;
+				}
+			}
+		}
+	}
+}
+
+.btn {
+	position: relative;
+	display: inline-block;
+}
+
+/* Текст подсказки */
+.btn .tooltip {
+	visibility: hidden;
+	width: max-content;
+	color: $color-white;
+	text-align: center;
+	background: $color-text-dark;
+	border-radius: 4px;
+
+	position: absolute;
+	z-index: 1;
+	bottom: 130%;
+	right: 0;
+	margin-left: -60px;
+	padding: 12px 16px;
+
+	font-family: Suisse Intl;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.tooltip:before {
+	content: '';
+	position: absolute;
+	display: block;
+	right: 0;
+	bottom: 13px;
+	border: 15px solid transparent;
+	border-top: 15px solid $color-text-dark;
+	transform: translate(-50%, calc(100% + 5px));
+}
+
+.btn:active .tooltip {
+	visibility: visible;
+}
