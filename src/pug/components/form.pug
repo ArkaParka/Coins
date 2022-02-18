@@ -53,8 +53,11 @@
 				button.confirm-btn Отправить
 	.warning.flex-row
 		.warning__icon
-			+png('form-warning')
+			+lazyPicture({
+				src: `${baseDir}images/sprites/png/form-warning.png`,
+				alt: 'warning',
+			}).image
 		.warning__text
-			| Для приобретения монеты в операционном офисе
-			| РНКБ Банк (ПАО) заполните поля
+			p Для приобретения монеты в операционном офисе
+			p РНКБ Банк (ПАО) заполните поля
 
