@@ -1,0 +1,43 @@
+- let selectOptions = [{key: 'Краснопролетарская 9, стр 5'}]
+
+form.form
+	h2.form-title
+		| Оформление заказа
+
+	.form-body
+		.form-group.flex-row
+			.form-item__title
+				| ФИО
+			.form-item__input
+				input(type="text" name="name")
+
+		.form-group.flex-column.flex-column_space-between
+			.flex-row
+				.form-item__title
+					| Телефон
+				.form-item__input
+					input(type="text" name="phone")
+
+			.flex-row
+				.form-item__title
+					| E-mail
+				.form-item__input
+					input(type="email" name="email")
+
+		.form-group
+			.flex-row
+				.form-item__title
+					.flex-column
+						p Операционный офис
+						.form-item__geo
+							.flex-column
+								.form-item__geo_icon
+									+svg('union')
+								.form-item__geo_address
+									| г. Симферополь
+
+				.form-item__select
+					select(name='office')
+						option(value='Офис1') Офис 1
+						option(value='Офис2') Офис 2
+						option(value='Офис3') Офис 3

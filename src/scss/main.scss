@@ -11,6 +11,7 @@
 
 @import "components/header";
 @import "components/product-card";
+@import "components/form";
 @import "components/footer";
 
 @import "pages/home";
@@ -25,8 +26,18 @@
 	max-width: 1504px;
 }
 
+.flex-column {
+	display: flex;
+	flex-direction: row;
+
+	&_space-between {
+		justify-content: space-between;
+	}
+}
+
 .flex-row {
 	display: flex;
+	flex-direction: column;
 
 	&_justify_between {
 		justify-content: space-between;
