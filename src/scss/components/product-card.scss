@@ -14,25 +14,20 @@
 		flex-direction: column;
 
 		padding: 40px;
+	}
 
-		&.new:before {
-			content: 'new';
+	&__notification {
+		position: absolute;
+		visibility: hidden;
+		right: 32px;
+		top: 32px;
 
-			position: absolute;
-			right: 32px;
-			top: 32px;
+		z-index: 1;
+		width: 56px;
+		height: 56px;
 
-			z-index: 1;
-			background-image: url("../../images/sprites/svg/new.svg");
-			width: 56px;
-			height: 56px;
-			padding: 16px 13px;
-
-			font-family: Suisse Intl;
-			font-size: 16px;
-			font-weight: 400;
-			line-height: 24px;
-			color: $color-white;
+		picture {
+			display: flex;
 		}
 	}
 
@@ -158,6 +153,12 @@
 				background-image: url("../../images/sprites/svg/basket-btn-press.svg");
 			}
 		}
+	}
+}
+
+.product-card.new {
+	.product-card__notification {
+		visibility: visible;
 	}
 }
 

@@ -1,7 +1,12 @@
 mixin productCard(data)
-	a.product-card
-		//TODO: new png
-		.product-card-container.new
+	a.product-card.new
+		.product-card-container
+			.product-card__notification
+				+lazyPicture({
+					src: `${baseDir}images/sprites/png/new.png`,
+					alt: 'Coin',
+				}).image
+
 			.product-card__image
 				+lazyPicture({
 					src: `${baseDir}images/sprites/png/coin-gold.png`,
