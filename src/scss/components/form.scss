@@ -83,14 +83,14 @@
 			font-family: Suisse Intl;
 			font-size: 16px;
 			line-height: 20px;
-			color: #333E48;
+			color: $color-text-dark;
 
 			.confirm {
 				width: 192px;
 
 				a {
 					text-decoration-line: underline;
-					color: #00AEC7;
+					color: $color-blue;
 				}
 			}
 		}
@@ -103,11 +103,11 @@
 			align-items: center;
 			padding: 26px 56px;
 
-			box-shadow: inset 0px -4px 16px #1CD3ED;
+			box-shadow: inset 0px -4px 16px $color-light-blue;
 			border-radius: 24px;
 			border: none;
 
-			background: linear-gradient(360deg, #00AEC7 0%, #00AEC7 6.67%, #01AFC8 13.33%, #02B1CA 20%, #04B3CD 26.67%, #06B7D0 33.33%, #09BAD4 40%, #0CBED8 46.67%, #0FC3DC 53.33%, #12C7E0 60%, #15CBE4 66.67%, #18CEE7 73.33%, #19D0EA 80%, #1BD2EC 86.67%, #1BD3ED 93.33%, #1CD3ED 100%);
+			background: $color-main-btn;
 		}
 	}
 }
@@ -129,7 +129,7 @@
 		font-family: Suisse Intl;
 		font-size: 16px;
 		line-height: 20px;
-		color: #828282;
+		color: $color-text-light;
 	}
 }
 
