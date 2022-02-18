@@ -9,21 +9,27 @@
 			.form-group.flex-row
 				.form-item__title
 					| ФИО
-				.form-item__input
+				.form-item__input.error
 					input(type="text" name="name")
+					.input-error
+						| Текст ошибки
 
 			.form-group.form-group_info.flex-column.flex-column_space-between
 				.flex-row.form-item
 					.form-item__title
 						| Телефон
 					.form-item__input
-						input(type="text" name="phone")
+						input(type="text" name="phone")#phone-input
+						.input-error
+							| Текст ошибки
 
 				.flex-row.form-item.form-item__email
 					.form-item__title
 						| E-mail
 					.form-item__input
-						input(type="email" name="email")
+						input(type="email" name="email")#email-input
+						.input-error
+							| Текст ошибки
 
 			.form-group
 				.flex-row
